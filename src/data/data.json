@@ -1,0 +1,252 @@
+[{
+	"menuName": "Sea Food",
+	"menuCode": "M100",
+	"menuList": [{
+		"itemCode": "SF100",
+		"itemName": "Fish",
+		"itemPrice": "70"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Consequent",
+		"itemPrice": "60"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Praising Pain",
+		"itemPrice": "50"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Exception Tint",
+		"itemPrice": "90"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Laborious Rhys",
+		"itemPrice": "70"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Fish",
+		"itemPrice": "60"
+	}]
+},
+{
+	"menuName": "Chicken",
+	"menuCode": "M101",
+	"menuList": [{
+		"itemCode": "CH100",
+		"itemName": "Fried Chicken",
+		"itemPrice": "30"
+	},
+	{
+		"itemCode": "CH101",
+		"itemName": "Chicken Curie",
+		"itemPrice": "80"
+	},
+	{
+		"itemCode": "CH102",
+		"itemName": "Praising Pain",
+		"itemPrice": "40"
+	},
+	{
+		"itemCode": "CH103",
+		"itemName": "Exception Tint",
+		"itemPrice": "90"
+	},
+	{
+		"itemCode": "CH104",
+		"itemName": "Laborious Rhys",
+		"itemPrice": "50"
+	},
+	{
+		"itemCode": "CH105",
+		"itemName": "Fish",
+		"itemPrice": "30"
+	}]
+},
+{
+	"menuName": "Desserts",
+	"menuCode": "M102",
+	"menuList": [{
+		"itemCode": "D100",
+		"itemName": "Choco Nuts",
+		"itemPrice": "20"
+	},
+	{
+		"itemCode": "D101",
+		"itemName": "Venial Cup",
+		"itemPrice": "10"
+	},
+	{
+		"itemCode": "D102",
+		"itemName": "Praising Pain",
+		"itemPrice": "20"
+	},
+	{
+		"itemCode": "D103",
+		"itemName": "Exception Tint",
+		"itemPrice": "30"
+	},
+	{
+		"itemCode": "D104",
+		"itemName": "Laborious Rhys",
+		"itemPrice": "40"
+	},
+	{
+		"itemCode": "D105",
+		"itemName": "Fish",
+		"itemPrice": "50"
+	}]
+},{
+	"menuName": "Appetizers",
+	"menuCode": "M100",
+	"menuList": [{
+		"itemCode": "SF100",
+		"itemName": "Fish",
+		"itemPrice": "120"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Consequent",
+		"itemPrice": "180"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Praising Pain",
+		"itemPrice": "100"
+	}]
+},
+{
+	"menuName": "Soup",
+	"menuCode": "M100",
+	"menuList": [{
+		"itemCode": "SF100",
+		"itemName": "Fish",
+		"itemPrice": "80"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Consequent",
+		"itemPrice": "190"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Praising Pain",
+		"itemPrice": "80"
+	}]
+},
+{
+	"menuName": "Chow Mein",
+	"menuCode": "M100",
+	"menuList": [{
+		"itemCode": "SF100",
+		"itemName": "Fish",
+		"itemPrice": "10"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Consequent",
+		"itemPrice": "90"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Praising Pain",
+		"itemPrice": "70"
+	}]
+},
+{
+	"menuName": "Chop Suey",
+	"menuCode": "M100",
+	"menuList": [{
+		"itemCode": "SF100",
+		"itemName": "Fish",
+		"itemPrice": "76"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Consequent",
+		"itemPrice": "45"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Praising Pain",
+		"itemPrice": "35"
+	}]
+},
+{
+	"menuName": "Fried Rice",
+	"menuCode": "M100",
+	"menuList": [{
+		"itemCode": "SF100",
+		"itemName": "Fish",
+		"itemPrice": "36"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Consequent",
+		"itemPrice": "79"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Praising Pain",
+		"itemPrice": "80"
+	}]
+},
+{
+	"menuName": "Egg Foo Young",
+	"menuCode": "M100",
+	"menuList": [{
+		"itemCode": "SF100",
+		"itemName": "Fish",
+		"itemPrice": "90"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Consequent",
+		"itemPrice": "60"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Praising Pain",
+		"itemPrice": "90"
+	}]
+},
+{
+	"menuName": "Sweet & Soup",
+	"menuCode": "M100",
+	"menuList": [{
+		"itemCode": "SF100",
+		"itemName": "Fish",
+		"itemPrice": "80"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Consequent",
+		"itemPrice": "12"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Praising Pain",
+		"itemPrice": "12"
+	}]
+},{
+	"menuName": "Pork",
+	"menuCode": "M100",
+	"menuList": [{
+		"itemCode": "SF100",
+		"itemName": "Fish",
+		"itemPrice": "120"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Consequent",
+		"itemPrice": "180"
+	},
+	{
+		"itemCode": "SF100",
+		"itemName": "Praising Pain",
+		"itemPrice": "80"
+	}]
+}]

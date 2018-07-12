@@ -1,0 +1,108 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Ristorante Il Fornello</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+         <!-- bower:css -->
+         <link rel="stylesheet" href="../app/assets/build/vendors.css">
+         <!-- endinject -->
+      
+         <!-- inject:css -->
+         <link rel="stylesheet" href="../app/assets/build/app.css">
+         <!-- endinject -->
+      
+         <!-- bower:js -->
+         <script src="../app/assets/build/vendors.js"></script>
+         <!-- endinject -->
+      
+         <!-- inject:js -->
+         <script src="../app/assets/build/app.js"></script>
+         <!-- endinject -->
+
+        
+    </head>
+    <body data-ng-app="schoolApp">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+           <div id="divContainer" class="container">
+              <div class="navbar-header">
+                 <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#navbarContent">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand navbar-left" href="#">
+                    <span class="fa fa-cutlery"></span>
+                 </a>
+              </div>
+              <div id="navbarContent" class="collapse navbar-collapse">
+                 <ul class="nav navbar-nav "> <!-- navbar-right -->
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;About</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Indian</a></li>
+                          <li><a href="#">Chinese</a></li>
+                          <li><a href="#">Others</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                 </ul>
+              </div>
+           </div>
+        </nav>
+        <div data-ng-view></div>
+        <div class="container">
+            <footer>
+                <div class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-2 left-padding">
+                                <h5> Links </h5>
+                                <ul>
+                                    <li> <a href="#"> Home </a> </li>
+                                    <li> <a href="#"> About </a> </li>
+                                    <li> <a href="#"> Menu </a> </li>
+                                    <li> <a href="#"> Contact </a> </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 left-padding">
+                                <h5> Our Address </h5>
+                                <ul>
+                                    <li>214, King Street West</li>
+                                    <li>Downtown, Toronto</li>
+                                    <li>ONTARIO</li>
+                                    <li><span class="glyphicon glyphicon-earphone"></span>: +416 1234 5678</li>
+                                    <li><span class="glyphicon glyphicon-briefcase"></span>: +416 8765 4321</li>
+                                    <li><span class="glyphicon glyphicon-envelope"></span>: <a href="mailto:ilfornello@food.net">ilfornello@food.net</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 social left-padding">
+                                <ul class="footer-social">
+                                  <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
+                                  <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
+                                  <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
+                                  <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
+                                  <li><i class="fa fa-youtube social-icon youtube" aria-hidden="true"></i></li>
+                                  <li><i class="fa fa-envelope-square social-icon"><a href="mailto:ilfornello@food.net"></a></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/.row--> 
+                    </div>
+                </div>
+                <!--/.footer-->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p class="pull-center"> © Copyright 2015 Ristorante Il Fornello </p>
+                    </div>
+                </div>
+                <!--/.footer-bottom--> 
+            </footer>
+        </div>
+        <!--/.container--> 
+    </body>
+</html>

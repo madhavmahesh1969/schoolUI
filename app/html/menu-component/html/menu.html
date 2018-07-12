@@ -1,0 +1,87 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1>Ristorante Il Fornello</h1> 
+        <p>Simple, fresh ingredients, prepared and cooked with love and passion become truly great dishes, from wood-oven baked Neapolitan style pizzas to pastas, entrees!</p> 
+    </div>
+</div>
+<div id="divContainer" class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <h2>Fichipizza</h2>
+            <p class="features">A unique combination of Mediterranean and Italian pizza, topped with Mascarphone, proscuitto, figs, grando panado, honey and arugula.</p>
+            <a href="#">More »</a>
+        </div>
+        <div class="col-sm-3">
+            <h3 class="center-align">Our Unique Culinary Creations</h3>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-3">
+            <h3 class="center-align">This Month's Promotions</h3>
+        </div>
+        <div class="col-sm-9 top-padding">
+            <h2>Weekend Grand Buffet</h2>
+            <p class="features">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+            <a href="#">More »</a>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-9">
+            <h2>Tommy McHugh</h2>
+            <h4>Executive Chef</h4>
+            <p class="features">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Mediterranean-Italian experiences.</p>
+            <a href="#">More »</a>
+        </div>
+        <div class="col-sm-3">
+            <h3 class="center-align">Meet our Culinary Specialists</h3>
+        </div>                
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="menu-heading">
+            <h2>Menu</h2>
+            <h4>Checkout our dishes</h4>
+        </div>
+    </div>    
+<!--     <div class="row">
+        <div class="col-xs-12 col-sm-12  col-md-4" data-ng-repeat="menu in rac.menuData">
+            <div class="menu-head">
+                <div class="menu-rotate">
+                    <h1 class="menu-name">{{menu.menuName}}</h1>
+                    <div class="menu-title-bar br-black"></div>
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+            <div class="menu-list">
+                <ul>
+                    <li data-ng-repeat="menuList in menu.menuList">{{menuList.itemName}}<span>{{menuList.itemPrice | currency}}</span></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12  col-md-10">
+            <p class="features">Click on the <strong>Expand All</strong> button for a quick view of the whole menu!!!</p>
+        </div> 
+        <div class="col-xs-12 col-sm-12  col-md-2">
+            <!-- <div ui-grid="{ data: rac.menuData }" class="myGrid"></div> -->
+            <button id="expandAll" type="button" class="btn btn-success" ng-click="rac.expandAll()">Expand All</button>
+        </div>    
+<!--         <div class="col-xs-12 col-sm-12  col-md-3">
+            <button id="toggleFirstRow" type="button" class="btn btn-success" ng-click="rac.toggleRow(0)">Toggle First Row</button>
+        </div>    
+        <div class="col-xs-12 col-sm-12  col-md-3">
+            <button id="toggleSecondRow" type="button" class="btn btn-success" ng-click="rac.toggleRow(1)">Toggle Second Row</button>
+        </div>    
+        <div class="col-xs-12 col-sm-12  col-md-3">
+            <button id="toggleExpandNoChildren" type="button" class="btn btn-success" ng-click="rac.toggleExpandNoChildren()">Toggle Expand No Children</button>
+        </div>     -->
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12  col-md-12">
+            <div id="grid1" ui-grid="rac.gridOptions" ui-grid-tree-view class="grid"></div>
+        </div>
+    </div>    
+</div>

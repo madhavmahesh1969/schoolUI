@@ -1,0 +1,317 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css";
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+        
+}
+.navbar-default .navbar-brand {
+    color: #fcf8e3;
+}
+
+.navbar-default{
+    background-color: #413794;
+    border-color: #413794;
+}
+.navbar {
+    border-bottom: 2px solid black;
+    padding: 0;
+}
+/* .navbar-default .navbar-nav>li>a { */
+    /* color: #fcf8e3; */
+/* } */
+.navbar-header a{
+    padding-top: 15px;
+}
+.navbar-default .navbar-nav>.active>a {
+    background-color: #221c50;
+    color: #fcf8e3;
+}
+.jumbotron h1 {
+    margin-top: 60px !important; 
+    margin-bottom: 60px !important;
+    color: #fcf8e3;
+}
+.jumbotron p {
+    margin-right: 36%;
+    color: #fcf8e3;
+}
+.jumbotron {
+    background-color: #8178cc
+}
+.row .center-align {
+    padding-top: 40px;
+    text-align: center;
+}
+
+h5 {
+    padding-left: 40px;
+}
+
+.row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background: #d3d3d3;
+}
+
+.pull-center {
+    text-align: center;
+}
+.social-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    margin-right: 3px;
+    padding-top: 7px;
+    border-radius: 16%;
+}
+li {
+  display: block;
+}
+ .footer-social li{
+     float:left;
+     display: block;
+ }
+ .linked-in{
+     background-color:#007bb6;
+ }
+ .facebook{
+     background-color:#3b5998;
+ }
+ .twitter{
+     background-color:#1da1f2;
+ }
+ .google{
+     background-color:#f63e28;
+ }
+ .youtube {
+     background-color: #e61629;
+ }
+ .social {
+     display: block;
+     float: right;
+     padding-top: 45px;
+     padding-left: 100px;
+     
+ }
+ 
+ @media (max-width: 992px) {
+        .social{
+            padding-left: 0;    
+        }
+  }
+ 
+ /* 
+#bodyDiv {
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+
+.track3 {
+    width: 10px;
+    background: rgba(0, 0, 0, 0);
+    margin-right: 2px;
+    border-radius: 10px;
+    -webkit-transition: background 250ms linear;
+    transition: background 250ms linear;
+}
+
+.track3:hover,
+.track3.dragging {
+    background: #d9d9d9; 
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.handle3 {
+    width: 7px;
+    right: 0;
+    background: #999;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    -webkit-transition: width 250ms;
+    transition: width 250ms;
+}
+
+.track3:hover .handle3,
+.track3.dragging .handle3 {
+    width: 10px;
+} */
+
+@media (max-width: 640px) {
+    .jumbotron p {
+        margin-right: 0px;
+    }
+    .top-padding {
+        padding-top: 50px;
+    }
+    .left-padding {
+        padding-left: 0px;
+    }
+    .social {
+        float: none;
+    }
+    .features {
+        text-align: center;
+    }
+}
+.menu-heading, .menu-head{
+    text-align: center;
+}
+
+.menu-head {
+    display: block;
+    border: 1px solid black;
+    border-style: dashed;
+    border-radius: 4px;
+    padding: 35px 0;
+    margin-bottom: 20px;
+}
+
+.menu-name {
+    //padding-bottom: 10px;
+}
+
+.menu-list ul li {
+    display: block;
+    border: 1px solid black;
+    padding: 10px 5px;
+    font-size: 16px;
+
+}
+.menu-list ul li:not(:last-child) {
+    border-bottom: 0;
+}
+.menu-list ul li:first-child{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.menu-list ul li:last-child{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.menu-list ul {
+    padding-left: 0;
+}
+.menu-list ul li  span{ 
+    float: right;
+}
+.menu-title-bar {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 5px;
+}
+
+.br-black {
+    background-color: black;
+}
+
+.menu-rotate {
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg);
+}
+
+.ui-grid-header-cell {
+    text-align: center;
+}
+
+/* .grid, .ui-grid-render-container-body .ui-grid-viewport {
+    height: 100% !important;
+} */
+
+/*Login form*/
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+/*Login form*/
