@@ -1,0 +1,23 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1>Question Details</h1> 
+    </div>
+</div>
+<div id="divContainer" class="container">
+    <form ng-submit="uqc.login()">
+      <h4> Please answer the following security questions: </h4>
+      <div class="container">
+        <label for="question"><b>Question 1:</b></label>
+        <input type="text" placeholder="Enter Answer" name="answer" required  ng-model="answer1">
+
+        <label for="question"><b>Question 2:</b></label>
+        <input type="text" placeholder="Enter Answer" name="answer" required  ng-model="answer2">
+        
+        <label for="question"><b>Question 3:</b></label>
+        <input type="text" placeholder="Enter Answer" name="answer" required  ng-model="answer3">
+
+        <button type="submit">Submit</button>
+      </div>
+
+    </form>
+</div>

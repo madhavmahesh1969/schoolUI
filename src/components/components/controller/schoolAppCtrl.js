@@ -18,7 +18,7 @@
             //var deferred = lac.$q.defer();
             lac.schoolAppLoginService.login(lac.username,lac.password).then(function(loginornot) {
                 console.log('loginornot',loginornot.data);            
-                $location.path('userDetails');
+                $location.path('userQuestions');
             });
            
         }
