@@ -1,29 +1,58 @@
 (function() {
-    'use strict';
-    /**
+  "use strict";
+  /**
      * Function responsible to create a controller.
      */
-    var userAddDetailsCtrl = function($scope, schoolAppLoginService,$q, $location) {
-        var lac;
-        lac = this;
-        lac.$q = $q;
-        lac.schoolAppLoginService  = schoolAppLoginService;
-        lac.username='';
-        lac.password='';
-        
-        lac.login = function() {
-            
-        
-            //var deferred = lac.$q.defer();
-            /* lac.schoolAppLoginService.login(lac.username,lac.password).then(function(loginornot) {
-                console.log('loginornot',loginornot.data);       */      
-                $location.path('userDetails');
-            /* }); */
-           
-        }
+  var userAddDetailsCtrl = function(
+    $scope,
+    questionService,
+    $q,
+    $location,
+    userAddDetailsService
+  ) {
+    var uadc;
+    uadc = this;
+    uadc.$q = $q;
+    uadc.questionService = questionService;
+    uadc.userAddDetailsService = userAddDetailsService;
+    uadc.postData = {
+      "userName":'',
+      "password":'',
+      "question1":'',
+      "question2":'',
+      "question3":'',
+      "answer1":'',
+      "answer2":'',
+      "answer3":''
     };
+    uadc.goToLogin = function(){
+      $location.path("/");
+    }
+    uadc.getQuestions = function() {
+      uadc.questionService.getQuestions().then(function(questions) {
+          console.log("questions", questions);
+          uadc.mainQuestions = questions.data;
+        });
+    };
+    uadc.getQuestions();
 
-    angular
-        .module('schoolApp')
-        .controller('userAddDetailsCtrl', ['$scope', 'schoolAppLoginService', '$q', '$location',  userAddDetailsCtrl]);
+    uadc.selectedQuestion = function(){
+     
+    }
+    uadc.postDataToService = function(){
+      console.log(uadc.postData);
+        uadc.userAddDetailsService.createUser(JSON.parse(JSON.stringify(uadc.postData)));
+    }
+  };
+
+  angular
+    .module("schoolApp")
+    .controller("userAddDetailsCtrl", [
+      "$scope",
+      "questionService",
+      "$q",
+      "$location",
+      "userAddDetailsService",
+      userAddDetailsCtrl
+    ]);
 })();

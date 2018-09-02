@@ -19,7 +19,7 @@
                     }]
                 } */
             })
-            .when('/userQuestions', {
+            .when('/userQuestions/:userId', {
                 templateUrl: './html/components/html/user_questions.html',
                 controller: 'userQuestionsCtrl',
                 controllerAs: 'uqc'
@@ -30,7 +30,7 @@
                     }]
                 } */
             })
-            .when('/userDetails', {
+            .when('/userDetails/:username', {
                 templateUrl: './html/components/html/user_details.html',
                 controller: 'userDetailsCtrl',
                 controllerAs: 'udc'
@@ -45,6 +45,19 @@
                 templateUrl: './html/components/html/user_add_details.html',
                 controller: 'userAddDetailsCtrl',
                 controllerAs: 'uadc'
+                // ,
+                // resolve: {
+                //     mainQuestions: [{'questins':'questions'}]
+                    
+                //     // ['questionsService', function(questionsService) {
+                //     //     return questionsService.getQuestions();
+                //     // }]
+                // } 
+            })
+            .when('/forgotPassword', {
+                templateUrl: './html/components/html/forgot_password.html',
+                controller: 'forgotPasswordCtrl',
+                controllerAs: 'fpc'
                 /* ,
                 resolve: {
                     GetMenuData: ['restaurantAppMenuDataService', function(restaurantAppMenuDataService) {

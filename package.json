@@ -13,6 +13,7 @@
     "url": " "
   },
   "devDependencies": {
+    "browser-sync": "^2.24.6",
     "browserify": "^14.4.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
@@ -31,10 +32,13 @@
     "gulp-uglify": "^3.0.0",
     "gulp-webserver": "^0.9.1",
     "main-bower-files": "^2.13.1",
-    "nodemon": "^1.18.2",
+    "nodemon": "^1.18.3",
     "vinyl-source-stream": "^1.1.0",
     "yargs": "^8.0.2"
   },
   "author": "Madhav <madhavmahesh@gmail.com>",
-  "license": "Client"
+  "license": "Client",
+  "dependencies": {
+    "livereload": "^0.7.0"
+  }
 }

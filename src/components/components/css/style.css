@@ -49,7 +49,8 @@
     color: #fcf8e3;
 }
 .jumbotron {
-    background-color: #8178cc
+    background-color: #8178cc;
+    padding: 1rem 2rem;
 }
 .row .center-align {
     padding-top: 40px;

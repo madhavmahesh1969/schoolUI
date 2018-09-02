@@ -1,25 +1,40 @@
 <div class="jumbotron">
     <div class="container">
-        <h1>User Details</h1> 
+        <h1>User Details</h1>
     </div>
 </div>
 <div id="divContainer" class="container">
-    <form>
+    <form ng-submit="uadc.postDataToService()">
+        <div class="container">
+            <label for="uname"><b>Username:</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required ng-model="uadc.postData.userName">
 
-      <div class="container">
-        <label for="uname"><b>Username:</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required  ng-model="lac.username">
+            <label for="uname"><b>Password</b></label>
+            <input type="password" placeholder="Enter Username" name="uname" required ng-model="uadc.postData.password">
 
-        <label for="uname"><b>Password</b></label>
-        <input type="password" placeholder="Enter Username" name="uname" required  ng-model="lac.username">
-        
-        <label for="question">Select question:</label>
-          <select class="form-control" id="sel1">
-            <option>1</option>
+            <label for="question">Select question  1:</label>
+            <select class="form-control" ng-model="uadc.postData.question1" ng-change="uadc.selectedQuestion(question._id,1)">
+                <option ng-repeat="question in uadc.mainQuestions">{{question.question}}</option>
           </select>
-        </label>
-        <button type="submit">Submit</button>
-      </div>
+            <input type="text" placeholder="Enter answer1" name="answer1" required ng-model="uadc.postData.answer1">
+            </label>
+            <label for="question">Select question 2:</label>
+            <select class="form-control" ng-model="uadc.postData.question2" ng-change="uadc.selectedQuestion(question._id,2)">
+                <option ng-repeat="question in uadc.mainQuestions">{{question.question}}</option>
+          </select>
+            <input type="text" placeholder="Enter answer2" name="answer2" required ng-model="uadc.postData.answer2">
+            </label>
+            <label for="question">Select question 3:</label>
+            <select class="form-control" ng-model="uadc.postData.question3" ng-change="uadc.selectedQuestion(question._id,3)">
+                <option ng-repeat="question in uadc.mainQuestions">{{question.question}}</option>
+          </select>
+            <input type="text" placeholder="Enter answer3" name="answer3" required ng-model="uadc.postData.answer3">
+            </label>
+            <button type="submit">Submit</button>
+        </div>
 
     </form>
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" ng-click="uadc.goToLogin()">Back</button>
+    </div>
 </div>

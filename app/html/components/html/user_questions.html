@@ -1,23 +1,26 @@
 <div class="jumbotron">
     <div class="container">
-        <h1>Question Details</h1> 
+        <h1>Question Details</h1>
     </div>
 </div>
 <div id="divContainer" class="container">
-    <form ng-submit="uqc.login()">
-      <h4> Please answer the following security questions: </h4>
-      <div class="container">
-        <label for="question"><b>Question 1:</b></label>
-        <input type="text" placeholder="Enter Answer" name="answer" required  ng-model="answer1">
+    <form ng-submit="uqc.submitForm()">
+        <h4> Please answer the following security questions: </h4>
+        <div class="container">
+            <label for="question"><b>Question 1:</b></label> <br>
+            <label for="question"><b>{{uqc.userDetails.question1}}</b></label>
+            <input type="text" placeholder="Enter Answer" name="answer" required ng-model="uqc.answer1">
 
-        <label for="question"><b>Question 2:</b></label>
-        <input type="text" placeholder="Enter Answer" name="answer" required  ng-model="answer2">
-        
-        <label for="question"><b>Question 3:</b></label>
-        <input type="text" placeholder="Enter Answer" name="answer" required  ng-model="answer3">
+            <label for="question"><b>Question 2:</b></label><br>
+            <label for="question"><b>{{uqc.userDetails.question2}}</b></label>
+            <input type="text" placeholder="Enter Answer" name="answer" required ng-model="uqc.answer2">
 
-        <button type="submit">Submit</button>
-      </div>
+            <label for="question"><b>Question 3:</b></label><br>
+            <label for="question"><b>{{uqc.userDetails.question3}}</b></label>
+            <input type="text" placeholder="Enter Answer" name="answer" required ng-model="uqc.answer3">
+
+            <button type="submit">Submit</button>
+        </div>
 
     </form>
 </div>

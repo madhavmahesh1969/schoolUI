@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var server = require('gulp-server-livereload');
 var connect = require('gulp-connect');
-var del = require('del');  
+var del = require('del'); 
 gulp.task('prepare', ['installFonts', 'fonts:dev'], function () {
 
     var bowerFiles = require('main-bower-files'),
